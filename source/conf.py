@@ -15,6 +15,7 @@ author = 'Omibo'
 
 extensions = [
     'sphinx.ext.mathjax',
+    'sphinx_rtd_theme',
 ]
 
 templates_path = ['_templates']
