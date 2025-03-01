@@ -9,4 +9,4 @@ This site covers various topics in cryptography:
    :maxdepth: 2
    :caption: Contents:
 
-   pq
+   03_pq/pq
