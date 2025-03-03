@@ -1,0 +1,29 @@
+\documentclass[11pt, a4paper]{book}
+
+% pdflatex main.tex
+% biber main
+% pdflatex main.tex
+% pdflatex main.tex
+
+\input{preamble.tex}
+
+\begin{document}
+
+\frontmatter
+\title{My notes on cryptography}
+\author{Omid Bodaghi}
+\date{\today}
+\maketitle
+\tableofcontents
+
+\mainmatter
+\part{Prerequisites}
+\input{chapters/00_prereq/polynomials.tex}
+\part{Zero Knowledge Proofs}
+% \input{chapters/02_zkp}
+
+\backmatter
+% \chapter{Index}
+% You can generate your index here (or using an external tool)
+
+\end{document}
