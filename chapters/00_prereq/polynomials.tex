@@ -2,16 +2,13 @@
 \begin{definition}
     A \textit{polynomial function} $f$ of degree $d$ is a function of the form
     \[
-        f(x) = c_0 + c_1 x + c_2 x^2 + \cdots + c_d x^d,
+        f(X) = c_0 + c_1 X + c_2 X^2 + \cdots + c_d X^d,
     \]
     where $c_d \neq 0$. Each term $c_i x^i$ is called a monomial.
 \end{definition}
 
-A polynomial function
-\[
-    f(X) \in \F^{(\leq d)}[X]
-\]
-is said to be of degree at most $d$, where the coefficients are taken from the finite field $\F$.
+A polynomial function $f(X) \in \F^{(\leq d)}[X]$ is said to be of degree at most $d$, 
+where the coefficients are taken from the finite field $\F$.
 
 In such a polynomial, all arithmetic operations—such as addition and multiplication—are performed in $\F$. 
 For example, to compute the expression $c_0 + c_2 x^2$, one first computes $x^2 = x \cdot x$ in $\F$, 
@@ -35,14 +32,12 @@ and its degree is given by $d_1 + d_2 + \cdots + d_{\ell}$.
 The \textit{total degree} of the polynomial is the maximum degree among all its monomials. 
 Multivariate polynomial functions over a filed $\F$ are commonly denoted either as $f(x_1, x_2, \ldots, x_{\ell})$, with each $x_i \in \F$, or as $f(x)$ where $x \in \F^{\ell}$.
 
-
-\section{SZDL Lemma}
 \begin{definition}
     In a polynomial function $f(X)$, an element $x$ is called a \textit{root} (or \textit{zero}) of $f$ if
-    \[
-        f(x) = 0.
-    \]
+    $f(x) = 0.$
 \end{definition}
+
+\section{SZDL Lemma}
 
 \begin{theorem}
     Let $f(X) \in \F^{(\leq d)}[X]$ be a polynomial of degree at most $d$ over the finite field $\F$. Then $f(X)$ has at most $d$ distinct roots.
